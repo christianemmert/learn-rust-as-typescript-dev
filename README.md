@@ -2,7 +2,11 @@
 
 ## Introduction
 
-Welcome to "Learning Rust as a TypeScript Developer"! This repository aims to help TypeScript developers learn Rust by comparing Rust concepts with their TypeScript counterparts and providing practical exercises. I haven't found myself such resource so I decided to create one by myself. Note that this is not an official Rust resource.
+Welcome to "Learning Rust as a TypeScript Developer"! This repository aims to help TypeScript developers learn Rust by comparing Rust concepts with their TypeScript counterparts and providing practical exercises.
+
+I haven't found such a resource so I decided to create one by myself.
+
+Note that this is not an official Rust resource.
 
 ## Why Rust?
 
@@ -30,5 +34,14 @@ curl https://sh.rustup.rs -sSf | sh
 Work through the `README.md` of a section. After that start practicing.
 Each section includes a `section<SECTION_NUMBER>.rs` file with a different set of tasks to play around.
 
-If you think you have filled all missing parts `// your code here`, you can try running the script via `cargo run --bin section<SECTION_NUMBER>`.
-If you feel stuck for every exercise there is a solution inside of `/Solutions`. You can run the solution via `cargo run --bin solution<SECTION_NUMBER>
+If you think you have filled all missing parts `// your code here`, run via
+
+```
+cargo run --bin section<SECTION_NUMBER>
+```
+
+If you feel stuck for every exercise there is a solution inside of `/Solutions`. Run the solution via
+
+```
+cargo run --bin solution<SECTION_NUMBER>
+```

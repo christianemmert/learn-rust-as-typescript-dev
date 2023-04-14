@@ -7,38 +7,38 @@
 
 fn main() {
     // 1. Declare an immutable variable `x` with the value 5
-    let x = 5;
+    // Your code here
     println!("x: {}", x);
 
     // 2. Declare a mutable variable `y` with the value 6
-    let mut y = 6;
+    // Your code here
     println!("y: {}", y);
 
     // 3. Modify the value of `y` to 7
-    y = 7;
+    // Your code here
     println!("y: {}", y);
 
     // 4. Declare an f64 variable `z` with the value 3.14
-    let z: f64 = 3.14;
+    // Your code here
     println!("z: {}", z);
 
     // 5. Declare a boolean variable `is_active` with the value true
-    let is_active = true;
+    // Your code here
     println!("is_active: {}", is_active);
 
     // 6. Declare a char variable `letter` with the value 'A'
-    let letter = 'A';
+    // Your code here
     println!("letter: {}", letter);
 
     // 7. Declare a string slice variable `greeting` with the value "Hello, Rust!"
-    let greeting: &str = "Hello, Rust!";
+    // Your code here
     println!("greeting: {}", greeting);
 
     // 8. Declare a mutable String variable `message` with the value "Welcome to Rust!"
-    let mut message: String = String::from("Welcome to Rust!");
+    // Your code here
     println!("message: {}", message);
 
     // 9. Modify the value of `message` by appending " Enjoy your learning journey!"
-    message.push_str(" Enjoy your learning journey!");
+    // Your code here
     println!("message: {}", message);
 }
