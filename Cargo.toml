@@ -1,0 +1,87 @@
+[package]
+name = "rust-as-typescript-dev"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "section1"
+path = "Section 01 - Basic Syntax and Data Types/section1.rs"
+
+[[bin]]
+name = "solution1"
+path = "Solutions/section1_solutions.rs"
+
+[[bin]]
+name = "section2"
+path = "Section 02 - Control Structures/section2.rs"
+
+[[bin]]
+name = "solution2"
+path = "Solutions/section2_solutions.rs"
+
+[[bin]]
+name = "section3"
+path = "Section 03 - Functions/section3.rs"
+
+[[bin]]
+name = "solution3"
+path = "Solutions/section3_solutions.rs"
+
+[[bin]]
+name = "section4"
+path = "Section 04 - Enums and Pattern Matching/section4.rs"
+
+[[bin]]
+name = "solution4"
+path = "Solutions/section4_solutions.rs"
+
+[[bin]]
+name = "section5"
+path = "Section 05 - Error Handling/section5.rs"
+
+[[bin]]
+name = "solution5"
+path = "Solutions/section5_solutions.rs"
+
+[[bin]]
+name = "section6"
+path = "Section 06 - Structs and Methods/section6.rs"
+
+[[bin]]
+name = "solution6"
+path = "Solutions/section6_solutions.rs"
+
+[[bin]]
+name = "section7"
+path = "Section 07 - Traits and Generics/section7.rs"
+
+[[bin]]
+name = "solution7"
+path = "Solutions/section7_solutions.rs"
+
+[[bin]]
+name = "section8"
+path = "Section 08 - Modules and Packages/section8.rs"
+
+[[bin]]
+name = "solution8"
+path = "Solutions/section8_solutions.rs"
+
+[[bin]]
+name = "section9"
+path = "Section 09 - Concurrency/section9.rs"
+
+[[bin]]
+name = "solution9"
+path = "Solutions/section9_solutions.rs"
+
+[[bin]]
+name = "section10"
+path = "Section 10 - Web Development Packages in Rust and TypeScript/section10.rs"
+
+[[bin]]
+name = "solution10"
+path = "Solutions/section10_solutions.rs"
+
+
+[dependencies]
