@@ -41,4 +41,22 @@ fn main() {
     // 9. Modify the value of `message` by appending " Enjoy your learning journey!"
     // Your code here
     println!("message: {}", message);
+
+    // 10. Declare a tuple variable `tuple_example` with the values (42, 3.14, true)
+    // Your code here
+    println!("tuple_example: {:?}", tuple_example);
+
+    // 11. Declare an array variable `array_example` with the values [1, 2, 3, 4, 5]
+    // Your code here
+    println!("array_example: {:?}", array_example);
+
+    // 12. Write a function `calculate_length` that takes a string slice reference and returns its length
+    // Your code here
+    let len = calculate_length(&greeting);
+    println!("The length of '{}' is {}.", greeting, len);
+
+    // 13. Write a function `change_message` that takes a mutable string reference and appends " Have fun!"
+    // Your code here
+    change_message(&mut message);
+    println!("message: {}", message);
 }

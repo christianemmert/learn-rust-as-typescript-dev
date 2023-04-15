@@ -5,7 +5,7 @@ edition = "2021"
 
 [[bin]]
 name = "section1"
-path = "Section 01 - Basic Syntax and Data Types/section1.rs"
+path = "Section 01 - Variables, Data Types and Borrowing/section1.rs"
 
 [[bin]]
 name = "solution1"

@@ -31,14 +31,38 @@ fn main() {
     println!("letter: {}", letter);
 
     // 7. Declare a string slice variable `greeting` with the value "Hello, Rust!"
-    let greeting: &str = "Hello, Rust!";
+    let greeting = "Hello, Rust!";
     println!("greeting: {}", greeting);
 
     // 8. Declare a mutable String variable `message` with the value "Welcome to Rust!"
-    let mut message: String = String::from("Welcome to Rust!");
+    let mut message = String::from("Welcome to Rust!");
     println!("message: {}", message);
 
     // 9. Modify the value of `message` by appending " Enjoy your learning journey!"
     message.push_str(" Enjoy your learning journey!");
     println!("message: {}", message);
+
+    // 10. Declare a tuple variable `tuple_example` with the values (42, 3.14, true)
+    let tuple_example = (42, 3.14, true);
+    println!("tuple_example: {:?}", tuple_example);
+
+    // 11. Declare an array variable `array_example` with the values [1, 2, 3, 4, 5]
+    let array_example = [1, 2, 3, 4, 5];
+    println!("array_example: {:?}", array_example);
+
+    // 12. Write a function `calculate_length` that takes a string slice reference and returns its length
+    let len = calculate_length(&greeting);
+    println!("The length of '{}' is {}.", greeting, len);
+
+    // 13. Write a function `change_message` that takes a mutable string reference and appends " Have fun!"
+    change_message(&mut message);
+    println!("message: {}", message);
+}
+
+fn calculate_length(s: &str) -> usize {
+    s.len()
+}
+
+fn change_message(some_string: &mut String) {
+    some_string.push_str(" Have fun!");
 }

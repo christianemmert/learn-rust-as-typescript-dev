@@ -1,6 +1,6 @@
-# Section 1: Basic Syntax and Data Types
+# Section 1: Variables, Data Types and Borrowing
 
-In this section, we'll cover basic syntax and data types in Rust, comparing them to TypeScript.
+In this section, we'll cover variables, data types, and borrowing in Rust, comparing them to TypeScript.
 
 ## Variables and Constants
 
@@ -105,5 +105,91 @@ const s: string = "hello";
 let t: string = "world";
 t = t + ", TypeScript!";
 ```
+
+### Tuple
+
+Tuples in Rust are fixed-size collections of elements with different types. In TypeScript, tuples are used to represent an array where the type of a fixed number of elements is known, but the length of the array may vary.
+
+#### Rust
+
+```rust
+let tuple: (i32, f64, bool) = (42, 3.14, true);
+let (x, y, z) = tuple; // destructuring
+```
+
+#### Typescript
+
+```typescript
+const tuple: [number, string, boolean] = [42, "Hello", true];
+const [x, y, z] = tuple; // destructuring
+```
+
+### Array
+
+Arrays in Rust are fixed-size collections of elements with the same type. In TypeScript, arrays are dynamically-sized and can hold elements of the same type.
+
+#### Rust
+
+```rust
+let arr: [i32; 5] = [1, 2, 3, 4, 5];
+let first_element = arr[0]; // access element by index
+```
+
+#### Typescript
+
+```typescript
+const arr: number[] = [1, 2, 3, 4, 5];
+const firstElement = arr[0]; // access element by index
+```
+
+## Borrowing
+
+Borrowing in Rust allows you to have multiple references to the same value without violating ownership rules. There are two types of borrowing: shared and mutable.
+
+### Shared Borrow
+
+Shared borrows allow multiple read-only references to the same value.
+
+#### Rust
+
+```rust
+fn main() {
+    let s = String::from("hello");
+    let len = calculate_length(&s);
+    println!("The length of '{}' is {}.", s, len);
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+```
+
+### Mutable Borrow
+
+Mutable borrows allow a single mutable reference to the same value.
+
+#### Rust
+
+```rust
+fn main() {
+    let mut s = String::from("hello");
+    change(&mut s);
+    println!("The new string is '{}'.", s);
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+```
+
+### Ownership
+
+Ownership is a central concept in Rust. It ensures memory safety without the need for a garbage collector.
+
+Rules of Ownership
+
+1. Each value in Rust has a single owner.
+2. When the owner goes out of scope, the value will be dropped.
+3. While a value is borrowed, the owner is not allowed to modify it.
 
 Now that you have a basic understanding of Rust's syntax and data types, practice them in the `section1.rs`.
