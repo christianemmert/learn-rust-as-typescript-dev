@@ -1,16 +1,94 @@
-# Introduction
+# Section 3: Control Flow
 
-Welcome to "Learning Rust as a TypeScript Developer"! This repository aims to help TypeScript developers learn Rust by comparing Rust concepts with their TypeScript counterparts and providing practical exercises.
+In this section, we'll explore control flow constructs in Rust and compare them with their TypeScript counterparts.
 
-## Why Rust?
+## If and If-Else Expressions
 
-Rust is a systems programming language that focuses on safety, speed, and concurrency. Some of the advantages Rust offers over other languages include:
+Both Rust and TypeScript have similar syntax for `if` and `if-else` expressions. One notable difference is that Rust does not have a ternary operator like TypeScript.
 
--   Memory safety without a garbage collector, using its unique ownership system.
--   Strong static typing and type inference, preventing many errors at compile-time.
--   High performance, similar to C and C++.
--   Fearless concurrency, making it easier to write efficient multi-threaded code.
+#### Rust
 
-Although Rust and TypeScript are different languages with unique features, both are statically typed and share some similarities in syntax and concepts. This repository will help you leverage your TypeScript knowledge to learn Rust effectively.
+```rust
+let x = 5;
 
-In the following sections, we will explore Rust concepts alongside their TypeScript counterparts and provide interactive exercises to reinforce your learning. Good luck!
+if x > 3 {
+    println!("x is greater than 3");
+} else if x > 5 {
+    println!("x is greater than 5 but not greater than 10");
+} else {
+    println!("x is not greater than 3");
+}
+```
+
+#### Typescript
+
+```typescript
+const x = 5;
+
+if (x > 10) {
+    console.log("x is greater than 10");
+} else if (x > 5) {
+    console.log("x is greater than 5 but not greater than 10");
+} else {
+    console.log("x is not greater than 5");
+}
+
+// Using the ternary operator in TypeScript
+const message = x > 3 ? "x is greater than 3" : "x is not greater than 3";
+```
+
+## Loops
+
+Both Rust and TypeScript have for, while, and loop constructs for iteration.
+
+#### Rust
+
+```rust
+// Using a for loop with a range
+for i in 1..4 {
+    println!("i: {}", i);
+}
+
+// Using a while loop
+let mut count = 0;
+while count < 5 {
+    println!("count: {}", count);
+    count += 1;
+}
+
+// Using a loop construct (infinite loop)
+let mut counter = 0;
+loop {
+    counter += 1;
+    if counter == 10 {
+        break;
+    }
+}
+```
+
+#### Typescript
+
+```typescript
+// Using a for loop
+for (let i = 1; i < 4; i++) {
+    console.log(`i: ${i}`);
+}
+
+// Using a while loop
+let count = 0;
+while (count < 5) {
+    console.log(`count: ${count}`);
+    count++;
+}
+
+// Using a for loop as an infinite loop
+let counter = 0;
+for (;;) {
+    counter++;
+    if (counter === 10) {
+        break;
+    }
+}
+```
+
+Now that you have a basic understanding of Rust's control flow constructs, practice them in the section2.rs file.

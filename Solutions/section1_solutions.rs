@@ -1,9 +1,9 @@
-// Welcome to the interactive Rust file for Section 2!
+// Welcome to the interactive Rust file for Section 1!
 // You can use this file to practice Rust concepts as you learn them.
 //
 // To run this file, make sure you have Rust and Cargo installed.
 // Navigate to the directory containing this file in your terminal,
-// and run the command 'cargo run --bin section2' (without quotes) to execute the code.
+// and run the command 'cargo run --bin solution1' (without quotes) to execute the code.
 
 fn main() {
     // 1. Declare an immutable variable `x` with the value 5
