@@ -41,6 +41,8 @@ fn main() {
 
 #### Typescript
 
+In TypeScript, classes are used to create custom data types by grouping together related pieces of data and methods.
+
 ```typescript
 class Point {
     x: number;
