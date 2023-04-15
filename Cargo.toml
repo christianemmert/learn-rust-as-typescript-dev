@@ -79,9 +79,4 @@ path = "Solutions/section9_solutions.rs"
 name = "section10"
 path = "Section 10 - Web Development Packages in Rust and TypeScript/section10.rs"
 
-[[bin]]
-name = "solution10"
-path = "Solutions/section10_solutions.rs"
-
-
 [dependencies]
