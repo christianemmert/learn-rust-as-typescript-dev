@@ -91,4 +91,4 @@ for (;;) {
 }
 ```
 
-Now that you have a basic understanding of Rust's control flow constructs, practice them in the section2.rs file.
+Now that you have a basic understanding of Rust's control flow constructs, practice them in the `section2.rs` file.

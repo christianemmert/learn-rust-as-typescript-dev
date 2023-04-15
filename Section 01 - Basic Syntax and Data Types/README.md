@@ -1,4 +1,4 @@
-# Section 2: Basic Syntax and Data Types
+# Section 1: Basic Syntax and Data Types
 
 In this section, we'll cover basic syntax and data types in Rust, comparing them to TypeScript.
 
@@ -106,4 +106,4 @@ let t: string = "world";
 t = t + ", TypeScript!";
 ```
 
-Now that you have a basic understanding of Rust's syntax and data types, practice them in the section1.rs.
+Now that you have a basic understanding of Rust's syntax and data types, practice them in the `section1.rs`.

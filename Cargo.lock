@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "rust-as-typescript-dev"
+name = "learn-rust-as-typescript-dev"
 version = "0.1.0"
